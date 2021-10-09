@@ -15,11 +15,11 @@ class ViewController: UIViewController {
         flipCard(withEmoji: "👻", on: sender)
     }
     func flipCard(withEmoji emoji: String, on button: UIButton){
-        if button.currentTitle == emoji {
-            button.setTitle("", for : UIControl.State.normal)
+        if(button.currentTitle == emoji) {
+            button.setTitle("", for : .normal)
             button.backgroundColor = UIColor.orange
         } else {
-            button.setTitle(emoji, for : UIControl.State.normal)
+            button.setTitle(emoji, for : .normal)
             button.backgroundColor = UIColor.white
         }
     }
