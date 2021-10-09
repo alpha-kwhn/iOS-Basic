@@ -13,8 +13,6 @@
 		F46ADDE9270D5DBD000DB9F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F46ADDE8270D5DBD000DB9F4 /* Assets.xcassets */; };
 		F46ADDEC270D5DBD000DB9F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46ADDEA270D5DBD000DB9F4 /* LaunchScreen.storyboard */; };
 		F46ADDF427100681000DB9F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46ADDF327100680000DB9F4 /* ViewController.swift */; };
-		F46ADDF72711914E000DB9F4 /* Emoji Shrink.png in Resources */ = {isa = PBXBuildFile; fileRef = F46ADDF62711914E000DB9F4 /* Emoji Shrink.png */; };
-		F46ADDFA271192CE000DB9F4 /* 콘솔창 출력 에러 해결.png in Resources */ = {isa = PBXBuildFile; fileRef = F46ADDF9271192CE000DB9F4 /* 콘솔창 출력 에러 해결.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +24,6 @@
 		F46ADDEB270D5DBD000DB9F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F46ADDED270D5DBD000DB9F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F46ADDF327100680000DB9F4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F46ADDF62711914E000DB9F4 /* Emoji Shrink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Emoji Shrink.png"; path = "../../../../../../var/folders/nb/0y68q2gj1v9fqx5x0j2vlmfh0000gn/T/TemporaryItems/NSIRD_screencaptureui_7VrWbZ/Emoji Shrink.png"; sourceTree = "<group>"; };
-		F46ADDF9271192CE000DB9F4 /* 콘솔창 출력 에러 해결.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "콘솔창 출력 에러 해결.png"; path = "../../../../../../var/folders/nb/0y68q2gj1v9fqx5x0j2vlmfh0000gn/T/TemporaryItems/NSIRD_screencaptureui_jlDaVY/콘솔창 출력 에러 해결.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +56,6 @@
 		F46ADDDE270D5DBB000DB9F4 /* iOS_Study */ = {
 			isa = PBXGroup;
 			children = (
-				F46ADDF527119101000DB9F4 /* Error Resolution */,
 				F46ADDF327100680000DB9F4 /* ViewController.swift */,
 				F46ADDDF270D5DBB000DB9F4 /* AppDelegate.swift */,
 				F46ADDE1270D5DBB000DB9F4 /* SceneDelegate.swift */,
@@ -70,15 +65,6 @@
 				F46ADDED270D5DBD000DB9F4 /* Info.plist */,
 			);
 			path = iOS_Study;
-			sourceTree = "<group>";
-		};
-		F46ADDF527119101000DB9F4 /* Error Resolution */ = {
-			isa = PBXGroup;
-			children = (
-				F46ADDF9271192CE000DB9F4 /* 콘솔창 출력 에러 해결.png */,
-				F46ADDF62711914E000DB9F4 /* Emoji Shrink.png */,
-			);
-			path = "Error Resolution";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,9 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F46ADDFA271192CE000DB9F4 /* 콘솔창 출력 에러 해결.png in Resources */,
 				F46ADDEC270D5DBD000DB9F4 /* LaunchScreen.storyboard in Resources */,
-				F46ADDF72711914E000DB9F4 /* Emoji Shrink.png in Resources */,
 				F46ADDE9270D5DBD000DB9F4 /* Assets.xcassets in Resources */,
 				F46ADDE7270D5DBB000DB9F4 /* Main.storyboard in Resources */,
 			);
