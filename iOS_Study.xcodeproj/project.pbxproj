@@ -42,7 +42,7 @@
 		F46ADDD3270D5DBB000DB9F4 = {
 			isa = PBXGroup;
 			children = (
-				F4F28616271302EA0061CD5C /* New Group */,
+				F4F28616271302EA0061CD5C /* Study Note */,
 				F46ADDDE270D5DBB000DB9F4 /* iOS_Study */,
 				F46ADDDD270D5DBB000DB9F4 /* Products */,
 			);
@@ -70,12 +70,12 @@
 			path = iOS_Study;
 			sourceTree = "<group>";
 		};
-		F4F28616271302EA0061CD5C /* New Group */ = {
+		F4F28616271302EA0061CD5C /* Study Note */ = {
 			isa = PBXGroup;
 			children = (
 				F4F28617271302F20061CD5C /* File.swift */,
 			);
-			path = "New Group";
+			path = "Study Note";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
