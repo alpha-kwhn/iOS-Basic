@@ -40,7 +40,6 @@
 		F46ADDD3270D5DBB000DB9F4 = {
 			isa = PBXGroup;
 			children = (
-				F46ADDFE2712F82E000DB9F4 /* Study Note */,
 				F46ADDDE270D5DBB000DB9F4 /* iOS_Study */,
 				F46ADDDD270D5DBB000DB9F4 /* Products */,
 			);
@@ -66,13 +65,6 @@
 				F46ADDED270D5DBD000DB9F4 /* Info.plist */,
 			);
 			path = iOS_Study;
-			sourceTree = "<group>";
-		};
-		F46ADDFE2712F82E000DB9F4 /* Study Note */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Study Note";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
