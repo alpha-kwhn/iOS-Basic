@@ -12,6 +12,10 @@ class ViewController: UIViewController {
     //1. 이니셜라이저 이용(init)
     //2. =0 사용하기
     
+    lazy var game: iOS_Study = iOS_Study(numberOfPairsOfCards: (cardButtons.count + 1) / 2)
+    //model과 controller의 통신 창구
+    //lazy는 didSet을 가질 수 없음
+    
     //var flipCount : Int = 0 타입추론을 적용해서 간결한 코드 작성이 가능하다
     var flipCount = 0 //Swift가 Int라고 타입추론을 함
     {
@@ -28,7 +32,6 @@ class ViewController: UIViewController {
     
     @IBOutlet var cardButtons: [UIButton]!
     
-    var emojiChoices = ["👻","🎃","👻","🎃"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,21 +39,41 @@ class ViewController: UIViewController {
     @IBAction func touchCard(_ sender: UIButton) {
         flipCount += 1
         if let cardNumber = cardButtons.firstIndex(of: sender){
-            flipCard(withEmoji: emojiChoices[cardNumber], on: sender)
+            game.chooseCard(at: cardNumber)
+            updateViewFromModel()
         } else {
             print("chosen card was not in cardButtons")
         }
     }
     
-    func flipCard(withEmoji emoji: String, on button: UIButton){
-        if(button.currentTitle == emoji) {
-            button.setTitle("", for : UIControl.State.normal)
-            button.backgroundColor = UIColor.orange
-        } else {
-            button.setTitle(emoji, for : UIControl.State.normal)
-            button.backgroundColor = UIColor.white
+    func updateViewFromModel(){
+        for index in cardButtons.indices {
+            let button = cardButtons[index]
+            let card = game.cards[index]
+            if card.isFaceUp {
+                button.setTitle(emoji(for: card), for: UIControl.State.normal)
+                button.backgroundColor = UIColor.white
+            } else {
+                button.setTitle("", for : UIControl.State.normal)
+                button.backgroundColor = card.isMatched ? UIColor.clear : UIColor.orange
+            }
         }
     }
     
+    var emojiChoices = ["👻","🎃","🦇","🐋","🐏","🍐","🎱","🚖","❤️"]
+    
+    var emoji = [Int:String]()
+    //딕셔너리 생성
+    
+    
+    
+    func emoji(for card: Card) -> String {
+        if emoji[card.identifier] == nil, emojiChoices.count > 0 {
+                let randomIndex = Int(arc4random_uniform(UInt32(emojiChoices.count)))
+                emoji[card.identifier] = emojiChoices.remove(at: randomIndex)
+            }
+        return emoji[card.identifier] ?? "?"
+    }
 }
+
 
