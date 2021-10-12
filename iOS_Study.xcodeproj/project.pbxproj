@@ -30,6 +30,8 @@
 		F4F28617271302F20061CD5C /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		F4F28626271341600061CD5C /* iOS_Study.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Study.swift; sourceTree = "<group>"; };
 		F4F28628271341A80061CD5C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		F4F2862A2715D42C0061CD5C /* 2강_MVC 패턴.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2강_MVC 패턴.md"; sourceTree = "<group>"; };
+		F4F2862B2715D45E0061CD5C /* 1강_iOS Introduction.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "1강_iOS Introduction.md"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				F4F28617271302F20061CD5C /* File.swift */,
+				F4F2862A2715D42C0061CD5C /* 2강_MVC 패턴.md */,
+				F4F2862B2715D45E0061CD5C /* 1강_iOS Introduction.md */,
 			);
 			path = "Study Note";
 			sourceTree = "<group>";
